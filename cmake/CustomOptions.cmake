@@ -1,5 +1,5 @@
 # ============================================================================
-# QGroundControl Build Configuration Options
+# VimaanaGCS Build Configuration Options (based on QGroundControl)
 # All options can be overridden by custom builds via CustomOverrides.cmake
 # ============================================================================
 
@@ -18,20 +18,20 @@ set(QGC_CUSTOM_DIR
 # ============================================================================
 
 set(QGC_APP_NAME
-    "QGroundControl"
+    "VimaanaGCS"
     CACHE STRING "Application name"
 )
 string(TIMESTAMP _copyright_year "%Y")
 set(QGC_APP_COPYRIGHT
-    "Copyright (c) ${_copyright_year} QGroundControl. All rights reserved."
+    "Copyright (c) ${_copyright_year} Vimaana Technologies. All rights reserved."
     CACHE STRING "Copyright notice"
 )
 set(QGC_APP_DESCRIPTION
-    "Open Source Ground Control App"
+    "VimaanaGCS - Ground Control Station by Vimaana Technologies"
     CACHE STRING "Application description"
 )
 set(QGC_ORG_NAME
-    "QGroundControl"
+    "Vimaana Technologies"
     CACHE STRING "Organization name"
 )
 set(QGC_ORG_DOMAIN
@@ -209,7 +209,7 @@ set(QGC_QT_ANDROID_MIN_SDK_VERSION
     CACHE STRING "Android minimum SDK version"
 )
 set(QGC_ANDROID_PACKAGE_NAME
-    "${QGC_PACKAGE_NAME}"
+    "com.vimaana.gcs"
     CACHE STRING "Android package identifier"
 )
 set(QGC_ANDROID_PACKAGE_SOURCE_DIR

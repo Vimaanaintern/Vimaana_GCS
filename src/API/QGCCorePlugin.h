@@ -165,11 +165,8 @@ public:
     /// The contents of this file should be a single line in the form:
     ///     v3.4.4
     /// This indicates the latest stable version number.
-#ifdef QGC_CUSTOM_BUILD
+    // VimaanaGCS: upstream QGroundControl update check disabled (it would advertise upstream releases).
     virtual QString stableVersionCheckFileUrl() const { return QString(); }
-#else
-    virtual QString stableVersionCheckFileUrl() const { return QStringLiteral("https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGC.version.txt"); }
-#endif
 
     /// Returns the full URL (including scheme) opened by the Update button and the new version dialog link.
     /// Custom builds must override to provide their own location.

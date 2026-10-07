@@ -8,7 +8,7 @@ if ($Phase -eq 'Install') {
     $installDir = $env:INSTALL_DIR
     Write-Host "Installing $($installerExe.Name) to $oldInstallDir"
     Start-Process -FilePath $installerExe.FullName -ArgumentList "/S", "/D=$oldInstallDir" -Wait -NoNewWindow
-    $oldBinary = Join-Path $oldInstallDir "bin\QGroundControl.exe"
+    $oldBinary = Join-Path $oldInstallDir "bin\VimaanaGCS.exe"
     if (-not (Test-Path $oldBinary)) {
       Write-Error "QGroundControl.exe not found at $oldBinary after initial install"
       exit 1
@@ -32,7 +32,7 @@ if ($Phase -eq 'Install') {
       Write-Error "Application data was removed during upgrade"
       exit 1
     }
-    $binary = Join-Path $installDir "bin\QGroundControl.exe"
+    $binary = Join-Path $installDir "bin\VimaanaGCS.exe"
     if (-not (Test-Path $binary)) {
       Write-Error "QGroundControl.exe not found at $binary after upgrade"
       Get-ChildItem -Path $installDir -Recurse | Select-Object FullName

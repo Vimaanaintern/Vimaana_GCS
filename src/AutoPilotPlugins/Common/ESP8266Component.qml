@@ -241,7 +241,7 @@ Item {
                             }
                             Row {
                                 QGCLabel {
-                                    text:                   qsTr("QGC UDP Port")
+                                    text:                   qsTr("VimaanaGCS UDP Port")
                                     width:                  _middleRowWidth
                                     anchors.baseline:       qgcportField.baseline
                                 }
@@ -277,11 +277,11 @@ Item {
                            Layout.alignment:            Qt.AlignHCenter
                        }
                        QGCLabel {
-                           text:                        qsTr("Bridge/QGC Link")
+                           text:                        qsTr("Bridge/VimaanaGCS Link")
                            Layout.alignment:            Qt.AlignHCenter
                        }
                        QGCLabel {
-                           text:                        qsTr("QGC/Bridge Link")
+                           text:                        qsTr("VimaanaGCS/Bridge Link")
                            Layout.alignment:            Qt.AlignHCenter
                        }
                        Row {
@@ -434,7 +434,7 @@ Item {
                             visible:    false
                             buttons:    MessageDialog.Yes | MessageDialog.No
                             title:      qsTr("Reboot WiFi Bridge")
-                            text:       qsTr("This will restart the WiFi Bridge so the settings you've changed can take effect. Note that you may have to change your computer WiFi settings and QGroundControl link settings to match these changes. Are you sure you want to restart it?")
+                            text:       qsTr("This will restart the WiFi Bridge so the settings you've changed can take effect. Note that you may have to change your computer WiFi settings and VimaanaGCS link settings to match these changes. Are you sure you want to restart it?")
                             onButtonClicked: function (button, role) {
                                 switch (button) {
                                 case MessageDialog.Yes:

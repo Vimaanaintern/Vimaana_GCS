@@ -42,12 +42,12 @@ def validate(package: Path) -> None:
     install, remove = package_commands(package)
     subprocess.run(install, env={**os.environ, "DEBIAN_FRONTEND": "noninteractive"}, check=True)
     try:
-        if not os.access("/opt/QGroundControl/bin/QGroundControl", os.X_OK):
+        if not os.access("/opt/QGroundControl/bin/VimaanaGCS", os.X_OK):
             raise ValueError("Installed application is missing or not executable")
-        if not Path("/usr/bin/QGroundControl").is_symlink():
+        if not Path("/usr/bin/VimaanaGCS").is_symlink():
             raise ValueError("Installed launcher is not a symlink")
         subprocess.run(
-            ["/usr/bin/QGroundControl", "--help"],
+            ["/usr/bin/VimaanaGCS", "--help"],
             env={**os.environ, "QT_QPA_PLATFORM": "offscreen"},
             timeout=30,
             stdout=subprocess.DEVNULL,
@@ -55,7 +55,7 @@ def validate(package: Path) -> None:
         )
     finally:
         subprocess.run(remove, check=True)
-    if os.path.lexists("/opt/QGroundControl") or os.path.lexists("/usr/bin/QGroundControl"):
+    if os.path.lexists("/opt/QGroundControl") or os.path.lexists("/usr/bin/VimaanaGCS"):
         raise ValueError("Uninstall left application files behind")
     print(f"Native package lifecycle validated: {package.name}")
 

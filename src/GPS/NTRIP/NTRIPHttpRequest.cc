@@ -19,7 +19,7 @@ NTRIPHttpRequest NTRIPHttpRequest::build(const NTRIPConnectionConfig& config)
     const QByteArray host = config.host.toUtf8();
     if (!headers.append(Header::Host, QLatin1StringView(host.constData(), host.size())) ||
         !headers.append("Ntrip-Version", "Ntrip/2.0") ||
-        !headers.append(Header::UserAgent, "NTRIP QGroundControl/1.0")) {
+        !headers.append(Header::UserAgent, "NTRIP VimaanaGCS/1.0")) {
         result.error = QCoreApplication::translate("NTRIPHttpTransport", "Invalid NTRIP request header");
         return result;
     }

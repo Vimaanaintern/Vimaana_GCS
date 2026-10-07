@@ -21,7 +21,7 @@ endmacro()
 
 message(STATUS "")
 message(STATUS "==================================================================")
-message(STATUS "QGroundControl Build Configuration Summary")
+message(STATUS "VimaanaGCS Build Configuration Summary")
 message(STATUS "  Reporting a build problem? Copy this entire block into your issue")
 message(STATUS "  at https://github.com/mavlink/qgroundcontrol/issues")
 message(STATUS "==================================================================")

@@ -420,7 +420,7 @@ bool addMappingPersistent(const QString &mapping)
     }
 
     QTextStream out(&file);
-    out << "# QGroundControl User Gamepad Mappings\n";
+    out << "# VimaanaGCS User Gamepad Mappings\n";
     out << "# Generated automatically - edit with caution\n\n";
     for (const QString &line : existingMappings) {
         if (!line.isEmpty()) {

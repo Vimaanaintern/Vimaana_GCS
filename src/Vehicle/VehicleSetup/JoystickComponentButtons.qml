@@ -244,7 +244,7 @@ ColumnLayout {
                 }
 
                 QGCLabel {
-                    text: qsTr("QGC functions do not support shift actions")
+                    text: qsTr("VimaanaGCS functions do not support shift actions")
                     width: ScreenTools.defaultFontPixelWidth * 15
                     visible: hasFirmwareSupport && !buttonActionCombo.isFwAction
                     anchors.verticalCenter: parent.verticalCenter

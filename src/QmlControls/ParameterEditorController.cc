@@ -605,7 +605,7 @@ bool ParameterEditorController::buildDiffFromFile(const QString& filename)
     file.close();
 
     if (diffParsedCount == 0) {
-        QGC::showAppMessage(tr("No valid parameters found in file. Check that the file is in QGC or Mission Planner format."));
+        QGC::showAppMessage(tr("No valid parameters found in file. Check that the file is in VimaanaGCS or Mission Planner format."));
         return false;
     }
 

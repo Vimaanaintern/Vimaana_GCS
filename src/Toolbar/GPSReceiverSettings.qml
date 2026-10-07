@@ -340,7 +340,7 @@ SettingsGroupLayout {
     Explanation {
         objectName: "rtkPersistentConsentWarning"
         visible: root.receiver.serialSupported && root.presentation.persistentConfiguration
-        text: qsTr("For this connection only, allow QGroundControl to write requested role or base-setting changes to receiver flash and restart it. Changes may remain saved even if reconnecting fails. No factory reset is performed. Permission is cleared after each attempt and is never used by auto-connect.")
+        text: qsTr("For this connection only, allow VimaanaGCS to write requested role or base-setting changes to receiver flash and restart it. Changes may remain saved even if reconnecting fails. No factory reset is performed. Permission is cleared after each attempt and is never used by auto-connect.")
     }
 
     QGCButton {

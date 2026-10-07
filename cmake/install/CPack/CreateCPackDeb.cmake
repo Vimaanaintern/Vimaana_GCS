@@ -28,9 +28,9 @@ set(CPACK_DEBIAN_PACKAGE_RELEASE "${QGC_APP_VERSION_DEV}.g${QGC_GIT_HASH}")
 # set(CPACK_DEBIAN_PACKAGE_DEPENDS
 # set(CPACK_DEBIAN_ENABLE_COMPONENT_DEPENDS
 # Debian policy requires "Name <email>"; bare "Dronecode" is malformed.
-set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Dronecode <dev@dronecode.org>")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Vimaana Technologies <noreply@example.com>")
 set(CPACK_DEBIAN_PACKAGE_DESCRIPTION
-    "QGroundControl provides full flight control and mission planning for MAVLink-compatible vehicles."
+    "VimaanaGCS provides full flight control and mission planning for MAVLink-compatible vehicles."
 )
 set(CPACK_DEBIAN_PACKAGE_SECTION "electronics")
 # CPACK_DEBIAN_ARCHIVE_TYPE is the data.tar archive *format* (gnutar/paxr), not

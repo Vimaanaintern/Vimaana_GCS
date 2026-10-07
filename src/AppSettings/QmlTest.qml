@@ -382,7 +382,7 @@ Rectangle {
                             height: ctlPrevColumn._height
                             color: "black"
                             horizontalAlignment: Text.AlignHCenter
-                            text: qsTr("QGC name")
+                            text: qsTr("VimaanaGCS name")
                         }
                         Text {
                             width: ctlPrevColumn._colWidth
