@@ -34,7 +34,7 @@ Button {
         // tint their monochrome icon through QGCColoredImage. Plain `Row` skips visible:false items.
         QGCVectorImage {
             visible:                button.logo
-            height:                 ScreenTools.defaultFontPixelHeight * 2
+            height:                 Math.min(button.height * 0.9, ScreenTools.defaultFontPixelHeight * 4)
             width:                  height
             source:                 visible ? button.icon.source : ""
             anchors.verticalCenter: parent.verticalCenter
